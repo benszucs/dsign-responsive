@@ -1,0 +1,105 @@
+// ===============================
+//   Cards style
+// ===============================
+
+.cards-div {
+  position: relative;
+  width: 100%;
+  background-color: $background-primary;
+}
+
+.main-cards-content {
+  @include card-flex;
+  max-width: 500px;
+  img {
+    @include card-img;
+    @include grow;
+    width: 145px;
+  }
+}
+
+.cards4-content {
+  @include card-flex;
+  max-width: 736px;
+  img {
+    @include card-img;
+    @include grow;
+    width: 160px;
+  }
+}
+
+.cards3-content {
+  @include card-flex;
+  max-width: 544px;
+  img {
+    @include card-img;
+    @include grow;
+    width: 160px;
+  }
+}
+
+.cards2-content {
+  @include card-flex;
+  max-width: 352px;
+  img {
+    @include card-img;
+    @include grow;
+    width: 160px;
+  }
+}
+
+// ###### Hidden ########
+#student-projects, #freelance, #archives {
+  display: none;
+}
+
+
+@media screen and (min-width: 736px) {
+  .banner-container, #bannerAJAX {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .cards-div, #cardAJAX {
+    display: none;
+  }
+}
+
+// @media only screen and (min-width: 980px) {
+//   .main-cards-content {
+//     max-width: 650px;
+//     img {width: 160px;}
+//   }
+//   .cards4-content {
+//     max-width: 980px;
+//     img {width: 195px;}
+//   }
+//   .cards3-content {
+//     max-width: 718px;
+//     img {width: 195px;}
+//   }
+//   .cards2-content {
+//     max-width: 453px;
+//     img {width: 195px;}
+//   }
+// }
+
+@media only screen and (min-width: 1120px) {
+  .main-cards-content {
+    max-width: 750px;
+    img {width: 200px;}
+  }
+  .cards4-content {
+    max-width: 1120px;
+    img {width: 250px;}
+  }
+  .cards3-content {
+    max-width: 900px;
+    img {width: 250px;}
+  }
+  .cards2-content {
+    max-width: 585px;
+    img {width: 250px;}
+  }
+}

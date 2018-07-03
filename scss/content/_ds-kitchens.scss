@@ -1,0 +1,106 @@
+// ===============================
+//   DS Kitchens style
+// ===============================
+@font-face {
+  font-family: "BigNoodleTitling";
+  src: url("fonts/big_noodle_titling_oblique.ttf");
+}
+
+.ds-kitchens-section {
+  img {
+    width: 100%;
+    margin-bottom: -4px;
+  }
+}
+
+.ds-kitchens-section {background-color: $ds-kitchens-primary}
+
+.ds-kitchens-header {background-color: $ds-kitchens-dark}
+
+.ds-kitchens-logo {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 250px !important;
+}
+
+.description {
+  width: 90%;
+  margin: 0 auto;
+  color: $white;
+	font-weight: 400;
+	text-align: center;
+  font-size: 16px;
+  line-height: 1.2rem;
+  width: 90%;
+}
+
+.text-container {
+  width: 90%;
+  margin: 0 auto;
+  color: $white;
+  @media only screen and (min-width: 736px) {display: flex};
+}
+
+.text-box {
+  @include text-box;
+  @media only screen and (min-width: 736px) {
+    display: block;
+    width: 25%;
+    margin-right: 7.5%;
+    &:last-child {margin-right: 0}
+  }
+}
+.text-dark {color: $ds-kitchens-primary}
+
+@media only screen and (min-width: 1120px) {
+  .description {
+    width: 70%;
+    float: right;
+    font-size: 18px;
+    line-height: 1.3rem;
+  }
+  .ds-kitchens-logo {width: 20%;}
+  .float {display: inline-block;}
+}
+
+.kitchen-font {
+  font-family: "BigNoodleTitling", sans-serif;
+  font-size: 38px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.gold-font {
+  color: $ds-kitchens-secondary
+}
+
+.gold {
+  background-color: $ds-kitchens-secondary;
+  color: $ds-kitchens-primary;
+  padding-bottom: 20px;
+}
+
+// .blueBg {overflow: auto;}
+//
+// .blueprint-text-container {
+//   float: left;
+//   width: 33%;
+// }
+//
+// .blueprint-img-container {
+//   float: right;
+//   width: 66%;
+// }
+
+.blueprint-img {
+  display: block;
+  margin: 0 auto 20px auto;
+  @media only screen and (max-width: 736px) {
+    width: 250px;
+  }
+}
+
+.blueprint-text-box {
+ @include text-box;
+ color: $white;
+}

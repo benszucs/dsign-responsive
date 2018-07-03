@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dom Szucs Design</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ####################### Nav ############################# -->
+  <div class="topnav" id="myTopnav">
+    <div class="wrapper">
+      <img src="img/logo.png" alt="DSign Logo" class="nav-items"
+      id="logo">
+      <div class="nav-items" id="nav-links">
+        <a href="#">Portfolio</a>
+        <a href="#">About Me</a>
+        <a href="#">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">&#9776;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ################### Banner navigation panel ####################### -->
+  <div class="banner-container">
+    <div class="banner-content">
+      <div class="banner-items card-1" id="banner-1">Student Projects</div>
+      <div class="banner-items card-2" id="banner-2">Freelance</div>
+      <div class="banner-items card-3" id="banner-3">The Archives</div>
+    </div>
+  </div>
+  <div id="bannerAJAX"></div>
+
+  <!-- ################## Cards navigation panel ###################### -->
+  <div class="cards-div">
+    <div class="main-cards-content">
+      <img src="img/cards/card-1.png" alt="Student Projects" id="card-1">
+      <img src="img/cards/card-2.png" alt="Freelance" id="card-2">
+      <img src="img/cards/card-3.png" alt="The Archives" id="card-3">
+    </div>
+  </div>
+  <div id="cardAJAX"></div>
+
+  <div id="mainContent"></div>
+
+<!-- ################## FOOTER ###################### -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/burgerMenu.js"></script>
+  <script src="js/cards.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/banner.js"></script>
+  <script src="js/button.js"></script>
+</body>
+</html>

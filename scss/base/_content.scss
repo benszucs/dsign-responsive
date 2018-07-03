@@ -1,0 +1,55 @@
+.header {
+  margin: 0 auto;
+  width: 90%;
+  padding: 25px 25px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: auto;
+}
+
+.header-title {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.row {
+  @include row-default;
+  width: 700px;
+}
+
+.row-wide {
+  @include row-default;
+  width: 100%;
+  max-width: 1120px;
+}
+
+.col2 {
+  width: 50%;
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
+  img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    @media only screen and (max-width: 736px) {
+      margin-bottom: 20px;
+    }
+  }
+  @media only screen and (max-width: 736px) {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.text {
+  @include text-box;
+}
+
+.row-img {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}

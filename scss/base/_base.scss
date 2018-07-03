@@ -1,0 +1,29 @@
+// @media all and (max-width: 1690px) { ...}
+// @media all and (max-width: 1280px) { ...}
+// @media all and (max-width: 980px) { ... }
+// @media all and (max-width: 736px) { ... }
+// @media all and (max-width: 480px) { ... }
+
+body {
+  background-color: $background-primary;
+  font-family: 'Gill Sans', 'sans-serif';
+}
+
+.wrapper {
+  max-width: 736px;
+  margin: 0 auto;
+  @media only screen and (min-width: 1120px) {max-width: 1120px}
+}
+
+#mainContent {
+  margin-top: 50px;
+}
+
+section {
+  padding-bottom: 50px;
+  min-height: 100vh;
+}
+
+.mb-2 {margin-bottom: 30px !important;}
+
+.mt-2 {margin-top: 30px !important;}

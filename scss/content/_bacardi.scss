@@ -1,0 +1,29 @@
+.bacardi-section {
+  background-color: $bacardi-primary;
+  color: $white;
+}
+
+.bacardi-header {
+  background-color: $bacardi-dark;
+}
+
+.bacardi-title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.25em;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.bacardi-logo-container {
+  display: flex;
+  max-width: 430px;
+  margin: 0 auto 50px auto;
+}
+
+.bacardi-img {
+  max-width: 200px;
+  margin-right: 30px;
+  &:last-child {margin-right: 0}
+}

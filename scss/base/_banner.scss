@@ -1,0 +1,37 @@
+// ======================================
+//   Banner Styling
+// ======================================
+.banner-content {
+  background-color: $background-primary;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.banner-items {
+  @include banner-style;
+  @include grow;
+}
+
+
+.banner-items:first-child {
+  margin-top: 0;
+}
+// main banners
+#banner-1 {background-color: #dd5f54;}
+#banner-2 {background-color: #602c48;}
+#banner-3 {background-color: #4ca2d7;}
+
+// student projects
+#banner-a {background-color: #212a50;}
+#banner-b {background-color: #0f0f0f;}
+#banner-c {background-color: #e0d423; color: #000000;}
+#banner-d {background-color: #000000;}
+
+// freelance
+#banner-e {background-color: #000000;}
+#banner-f {background-color: #ef807a;}
+#banner-g {background-color: #fafafb; color: #000000;}
+
+// archives
+#banner-h {background-color: #fafafb; color: #000000;}
+#banner-i {background-color: #000000;}
